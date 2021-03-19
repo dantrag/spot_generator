@@ -30,11 +30,29 @@
      </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="next_button">
-      <property name="text">
-       <string>Next</string>
-      </property>
-     </widget>
+     <layout class="QVBoxLayout" name="static2">
+      <item>
+       <widget class="QPushButton" name="next_button">
+        <property name="text">
+         <string>Next</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="complement_checkbox">
+        <property name="text">
+         <string>First complement</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="backbone_checkbox">
+        <property name="text">
+         <string>Backbone</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>

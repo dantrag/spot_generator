@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QGraphicsItem>
+#include <QGraphicsPixmapItem>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,6 +18,10 @@ class MainWindow : public QMainWindow {
 
  private:
   void generateSpot();
+  void updateVisibility();
+  std::vector<QGraphicsItem*> backbone;
+  std::vector<QGraphicsPixmapItem*> complement;
+  std::vector<QGraphicsPixmapItem*> result;
 
   Ui::MainWindow* ui;
 };
